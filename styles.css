@@ -94,7 +94,8 @@ body{
   z-index: 20;
 }
 
-.cert-card:hover::before{ opacity: 1; }
+.cert-card:hover::before,
+.cert-card:hover::after{ opacity: 1; }
 
 .cert-image{
   width: 100%;
