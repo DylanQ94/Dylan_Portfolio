@@ -94,19 +94,21 @@ body{
   z-index: 20;
 }
 
-.cert-card:hover::before{ opacity: 1; }
+.cert-card:hover::before,
+.cert-card:hover::after{ opacity: 1; }
 
 .cert-image{
   width: 100%;
   height: 100%;
   position: relative;
   z-index: 1;
+  transform: translateZ(30px);
 }
 
 .cert-image img{
   width:100%;
   height:100%;
-  object-fit: cover;
+  object-fit: contain;
   display:block;
   backface-visibility: hidden;
 }
@@ -125,6 +127,25 @@ body{
 @media (prefers-reduced-motion: reduce){
   .cert-card,
   .cert-card::before{
+    transition: none;
+  }
+
+  .cert-card,
+  .cert-card:hover,
+  .cert-card:focus-visible{
+    transform: none;
+  }
+}
+
+@media (max-width: 900px){
+  .card-grid{ grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .cert-card,
+  .cert-image img,
+  .cert-card::before,
+  .cert-card::after{
     transition: none;
   }
 
