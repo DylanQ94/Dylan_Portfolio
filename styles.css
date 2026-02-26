@@ -117,7 +117,7 @@ body{
 .cert-image img{
   width:100%;
   height:100%;
-  object-fit: cover;
+  object-fit: contain;
   display:block;
   transform: translateZ(0);
   transition: transform 220ms ease, filter 220ms ease;
