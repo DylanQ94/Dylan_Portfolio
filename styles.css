@@ -45,7 +45,7 @@ body{
 .card-grid{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 24px;
+  gap: 16px;
   perspective: 1200px;
 }
 
@@ -97,8 +97,8 @@ body{
 }
 
 .cert-card:hover{
-  transform: perspective(1200px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(-12px) scale(1.02);
-  box-shadow: 0 30px 95px rgba(0,0,0,0.72), 0 0 45px rgba(93,146,255,0.28);
+  transform: perspective(1200px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(-18px) scale(1.06);
+  box-shadow: 0 38px 110px rgba(0,0,0,0.78), 0 0 60px rgba(93,146,255,0.36);
   border-color: rgba(188,214,255,0.6);
   z-index: 10;
 }
@@ -107,8 +107,7 @@ body{
 .cert-card:hover::after{ opacity: 1; }
 
 .cert-image{
-  aspect-ratio: 16 / 9;
-  background: #ffffff;
+  aspect-ratio: 16 / 10;
   overflow:hidden;
   position: relative;
   z-index: 1;
@@ -120,21 +119,21 @@ body{
   height:100%;
   object-fit: contain;
   display:block;
-  background: #ffffff;
-  transform: translateZ(0) scale(1);
-  transition: transform 220ms ease;
+  transform: translateZ(0);
+  transition: transform 220ms ease, filter 220ms ease;
   backface-visibility: hidden;
 }
 
 .cert-card:hover .cert-image img{
-  transform: translateZ(0) scale(1.03);
+  transform: translateZ(0) scale(1.01);
+  filter: saturate(1.05) contrast(1.02);
 }
 
 .cert-card:focus-visible{
   outline: 2px solid rgba(255,255,255,0.35);
   outline-offset: 2px;
-  transform: perspective(1200px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(-12px) scale(1.02);
-  box-shadow: 0 30px 95px rgba(0,0,0,0.72), 0 0 45px rgba(93,146,255,0.28);
+  transform: perspective(1200px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(-18px) scale(1.06);
+  box-shadow: 0 38px 110px rgba(0,0,0,0.78), 0 0 60px rgba(93,146,255,0.36);
 }
 
 .cert-meta{
