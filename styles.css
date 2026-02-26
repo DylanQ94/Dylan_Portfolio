@@ -62,7 +62,7 @@ body{
   border: 1px solid var(--border);
   border-radius: 0;
   overflow: hidden;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 160 / 119;
   background: #fff;
 
   transform-style: preserve-3d;
@@ -112,15 +112,10 @@ body{
   object-position: center;
   display:block;
   backface-visibility: hidden;
-  transform: scale(1.12);
-  transform-origin: center;
-  transition: transform 180ms ease;
+  transform: none;
+  transition: none;
 }
 
-.cert-card:hover .cert-image img,
-.cert-card:focus-visible .cert-image img{
-  transform: scale(1.18);
-}
 
 .cert-card:focus-visible{
   outline: 2px solid rgba(255,255,255,0.35);
@@ -135,8 +130,7 @@ body{
 
 @media (prefers-reduced-motion: reduce){
   .cert-card,
-  .cert-card::before,
-  .cert-image img{
+  .cert-card::before{
     transition: none;
   }
 
@@ -146,9 +140,4 @@ body{
     transform: none;
   }
 
-  .cert-card:hover .cert-image img,
-  .cert-card:focus-visible .cert-image img,
-  .cert-image img{
-    transform: none;
-  }
 }
