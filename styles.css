@@ -1,6 +1,5 @@
 :root{
   --bg: #0b0f17;
-  --card: rgba(255,255,255,0.06);
   --border: rgba(255,255,255,0.18);
   --text: rgba(255,255,255,0.92);
   --muted: rgba(255,255,255,0.70);
@@ -28,6 +27,7 @@ body{
   font-size: clamp(28px, 3vw, 42px);
   letter-spacing: 0.2px;
 }
+
 .hero p{
   margin: 0 0 32px;
   color: var(--muted);
@@ -39,13 +39,14 @@ body{
   gap: 6px;
   margin-bottom: 18px;
 }
+
 .section-head h2{ margin:0; font-size: 22px; }
 .section-head p{ margin:0; color: var(--muted); }
 
 .card-grid{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 16px;
+  gap: 14px;
   perspective: 1200px;
 }
 
@@ -58,18 +59,19 @@ body{
   display:block;
   text-decoration:none;
   color: inherit;
-  background: linear-gradient(160deg, rgba(31,37,54,0.95), rgba(17,22,35,0.95));
   border: 1px solid var(--border);
   border-radius: 0;
   overflow: hidden;
+  aspect-ratio: 16 / 10;
 
   transform-style: preserve-3d;
-  transform: perspective(1200px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(0);
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease, filter 180ms ease;
+  transform: perspective(1200px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(0) scale(1);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
   will-change: transform;
   position: relative;
   isolation: isolate;
   box-shadow: 0 16px 42px rgba(0,0,0,0.5);
+  background: #111;
 }
 
 .cert-card::before{
@@ -77,19 +79,8 @@ body{
   position:absolute;
   inset:0;
   background:
-    radial-gradient(circle at var(--mx) var(--my), rgba(255,255,255,0.36), transparent 40%),
-    linear-gradient(135deg, rgba(98,147,255,0.18), transparent 35%);
-  opacity: 0;
-  transition: opacity 180ms ease;
-  z-index: 0;
-  pointer-events:none;
-}
-
-.cert-card::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  border: 1px solid rgba(157,195,255,0.34);
+    radial-gradient(circle at var(--mx) var(--my), rgba(255,255,255,0.24), transparent 42%),
+    linear-gradient(135deg, rgba(98,147,255,0.14), transparent 40%);
   opacity: 0;
   transition: opacity 180ms ease;
   z-index: 2;
@@ -97,18 +88,18 @@ body{
 }
 
 .cert-card:hover{
-  transform: perspective(1200px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(-18px) scale(1.06);
-  box-shadow: 0 38px 110px rgba(0,0,0,0.78), 0 0 60px rgba(93,146,255,0.36);
-  border-color: rgba(188,214,255,0.6);
-  z-index: 10;
+  transform: perspective(1200px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(-18px) scale(1.2);
+  box-shadow: 0 46px 125px rgba(0,0,0,0.84), 0 0 65px rgba(93,146,255,0.38);
+  border-color: rgba(188,214,255,0.7);
+  z-index: 20;
 }
 
 .cert-card:hover::before,
 .cert-card:hover::after{ opacity: 1; }
 
 .cert-image{
-  aspect-ratio: 16 / 10;
-  overflow:hidden;
+  width: 100%;
+  height: 100%;
   position: relative;
   z-index: 1;
   transform: translateZ(30px);
@@ -119,43 +110,31 @@ body{
   height:100%;
   object-fit: contain;
   display:block;
-  transform: translateZ(0);
-  transition: transform 220ms ease, filter 220ms ease;
   backface-visibility: hidden;
-}
-
-.cert-card:hover .cert-image img{
-  transform: translateZ(0) scale(1.01);
-  filter: saturate(1.05) contrast(1.02);
 }
 
 .cert-card:focus-visible{
   outline: 2px solid rgba(255,255,255,0.35);
   outline-offset: 2px;
-  transform: perspective(1200px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(-18px) scale(1.06);
-  box-shadow: 0 38px 110px rgba(0,0,0,0.78), 0 0 60px rgba(93,146,255,0.36);
+  transform: perspective(1200px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(-18px) scale(1.2);
+  box-shadow: 0 46px 125px rgba(0,0,0,0.84), 0 0 65px rgba(93,146,255,0.38);
 }
 
-.cert-meta{
-  padding: 16px 16px 18px;
-  display:flex;
-  flex-direction: column;
-  gap: 6px;
-  position: relative;
-  z-index: 1;
-  transform: translateZ(40px);
+@media (max-width: 900px){
+  .card-grid{ grid-template-columns: 1fr; }
 }
 
-.cert-meta h3{
-  margin:0;
-  font-size: 18px;
-  line-height: 1.2;
-}
-.cert-meta p{
-  margin:0;
-  color: var(--muted);
-  font-size: 14px;
-  line-height: 1.35;
+@media (prefers-reduced-motion: reduce){
+  .cert-card,
+  .cert-card::before{
+    transition: none;
+  }
+
+  .cert-card,
+  .cert-card:hover,
+  .cert-card:focus-visible{
+    transform: none;
+  }
 }
 
 @media (max-width: 900px){
