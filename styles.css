@@ -1,0 +1,143 @@
+:root{
+  --bg: #0b0f17;
+  --border: rgba(255,255,255,0.18);
+  --text: rgba(255,255,255,0.92);
+  --muted: rgba(255,255,255,0.70);
+}
+
+*{ box-sizing: border-box; }
+
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans";
+  background: radial-gradient(1200px 600px at 20% 10%, rgba(255,255,255,0.08), transparent 60%),
+              radial-gradient(900px 500px at 80% 0%, rgba(255,255,255,0.06), transparent 55%),
+              var(--bg);
+  color: var(--text);
+}
+
+.container{
+  width: min(1320px, 96%);
+  margin: 0 auto;
+  padding: 48px 0 72px;
+}
+
+.hero h1{
+  margin: 0 0 10px;
+  font-size: clamp(28px, 3vw, 42px);
+  letter-spacing: 0.2px;
+}
+
+.hero p{
+  margin: 0 0 32px;
+  color: var(--muted);
+}
+
+.section-head{
+  display:flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.section-head h2{ margin:0; font-size: 22px; }
+.section-head p{ margin:0; color: var(--muted); }
+
+.card-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 14px;
+  perspective: 1200px;
+  overflow: visible;
+}
+
+.cert-card{
+  --rx: 0deg;
+  --ry: 0deg;
+  --mx: 50%;
+  --my: 50%;
+
+  display:block;
+  text-decoration:none;
+  border: 1px solid var(--border);
+  border-radius: 0;
+  overflow: hidden;
+  aspect-ratio: 160 / 119;
+  background: #fff;
+
+  transform-style: preserve-3d;
+  transform: perspective(1200px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(0) scale(1);
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  will-change: transform;
+  position: relative;
+  isolation: isolate;
+  box-shadow: 0 16px 42px rgba(0,0,0,0.5);
+}
+
+.cert-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at var(--mx) var(--my), rgba(255,255,255,0.24), transparent 42%),
+    linear-gradient(135deg, rgba(98,147,255,0.14), transparent 40%);
+  opacity: 0;
+  transition: opacity 180ms ease;
+  z-index: 2;
+  pointer-events:none;
+}
+
+.cert-card:hover{
+  transform: perspective(1200px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(-24px) scale(1.2);
+  box-shadow: 0 46px 125px rgba(0,0,0,0.84), 0 0 65px rgba(93,146,255,0.38);
+  border-color: rgba(188,214,255,0.7);
+  z-index: 20;
+}
+
+.cert-card:hover::before,
+.cert-card:hover::after{ opacity: 1; }
+
+.cert-image{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  background: #fff;
+}
+
+.cert-image img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  object-position: center;
+  display:block;
+  backface-visibility: hidden;
+  transform: none;
+  transition: none;
+}
+
+
+.cert-card:focus-visible{
+  outline: 2px solid rgba(255,255,255,0.35);
+  outline-offset: 2px;
+  transform: perspective(1200px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(-24px) scale(1.2);
+  box-shadow: 0 46px 125px rgba(0,0,0,0.84), 0 0 65px rgba(93,146,255,0.38);
+}
+
+@media (max-width: 900px){
+  .card-grid{ grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .cert-card,
+  .cert-card::before{
+    transition: none;
+  }
+
+  .cert-card,
+  .cert-card:hover,
+  .cert-card:focus-visible{
+    transform: none;
+  }
+
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dilan Quintero Espinosa — Portfolio</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1>Dilan Quintero Espinosa</h1>
+      <p>Process Engineer | Industrial Analytics | Azure • Databricks • Python</p>
+    </header>
+
+    <section class="section">
+      <div class="section-head">
+        <h2>🎓 Certifications</h2>
+        <p>Hover over a card to preview. Click to open.</p>
+      </div>
+
+      <div class="card-grid">
+        <a class="cert-card" href="certificates/R Certificate.png" target="_blank" rel="noopener">
+          <div class="cert-image">
+            <img src="certificates/R Certificate.png" alt="Udemy Certificate - R" loading="lazy">
+          </div>
+        </a>
+
+        <a class="cert-card" href="certificates/SQL Certificate.png" target="_blank" rel="noopener">
+          <div class="cert-image">
+            <img src="certificates/SQL Certificate.png" alt="Udemy Certificate - SQL" loading="lazy">
+          </div>
+        </a>
+
+        <a class="cert-card" href="certificates/Power BI.png" target="_blank" rel="noopener">
+          <div class="cert-image">
+            <img src="certificates/Power BI.png" alt="Udemy Certificate - Power BI" loading="lazy">
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const cards = document.querySelectorAll('.cert-card');
+
+    cards.forEach((card) => {
+      const onMove = (event) => {
+        const rect = card.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+
+        const rotateY = ((x / rect.width) - 0.5) * 14;
+        const rotateX = (0.5 - (y / rect.height)) * 14;
+
+        card.style.setProperty('--rx', `${rotateX.toFixed(2)}deg`);
+        card.style.setProperty('--ry', `${rotateY.toFixed(2)}deg`);
+        card.style.setProperty('--mx', `${((x / rect.width) * 100).toFixed(2)}%`);
+        card.style.setProperty('--my', `${((y / rect.height) * 100).toFixed(2)}%`);
+      };
+
+      const reset = () => {
+        card.style.setProperty('--rx', '0deg');
+        card.style.setProperty('--ry', '0deg');
+        card.style.setProperty('--mx', '50%');
+        card.style.setProperty('--my', '50%');
+      };
+
+      card.addEventListener('mousemove', onMove);
+      card.addEventListener('mouseleave', reset);
+      card.addEventListener('blur', reset);
+    });
+  </script>
+
+</body>
+</html>
