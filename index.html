@@ -3,47 +3,216 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dilan Quintero Espinosa — Portfolio</title>
+  <title>Dilan Quintero Espinosa - Portfolio</title>
   <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-  <main class="container">
-    <header class="hero">
-      <h1>Dilan Quintero Espinosa</h1>
-      <p>Process Engineer | Industrial Analytics | Azure • Databricks • Python</p>
-    </header>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <form class="top-search" id="top-search">
+        <input id="top-search-input" type="search" placeholder="Buscar seccion (Name, Projects, Experience...)" aria-label="Buscar seccion">
+        <button type="submit">Go</button>
+      </form>
+      <nav class="top-links" aria-label="Main navigation">
+        <a href="#name">Name</a>
+        <span class="pipe">|</span>
+        <a href="#projects">Projects</a>
+        <span class="pipe">|</span>
+        <a href="#experience">Experience</a>
+        <span class="pipe">|</span>
+        <a href="#certifications">Certifications</a>
+        <span class="pipe">|</span>
+        <a href="#about">About</a>
+        <span class="pipe">|</span>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <section class="section">
+  <main class="container">
+    <section class="section hero" id="name" data-section="name">
+      <h1>Dilan Quintero Espinosa</h1>
+      <p>Process Engineer | Industrial Analytics | Azure | Databricks | Python</p>
+      <div class="summary-grid">
+        <article class="summary-card">
+          <h3>Professional Focus</h3>
+          <p>Data Engineering and analytics applied to industrial and operational contexts.</p>
+        </article>
+        <article class="summary-card">
+          <h3>Core Stack</h3>
+          <p>Azure Data Factory, Synapse, Databricks, SQL, Python, Power BI.</p>
+        </article>
+        <article class="summary-card">
+          <h3>Current Goal</h3>
+          <p>Build end-to-end data platforms with clear business impact and production quality.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects" data-section="projects">
       <div class="section-head">
-        <h2>🎓 Certifications</h2>
+        <h2>Projects</h2>
+        <p>Summarized project highlights in one place.</p>
+      </div>
+      <div class="summary-grid">
+        <article class="summary-card">
+          <h3>Project 1</h3>
+          <p>Short description: objective, tools used, and measurable outcome.</p>
+        </article>
+        <article class="summary-card">
+          <h3>Project 2</h3>
+          <p>Short description: data source, transformation logic, and dashboard/report result.</p>
+        </article>
+        <article class="summary-card">
+          <h3>Project 3</h3>
+          <p>Short description: architecture, orchestration, and delivery impact.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experience" data-section="experience">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p>Professional history summarized with impact.</p>
+      </div>
+      <div class="summary-grid two-columns">
+        <article class="summary-card">
+          <h3>Role / Company</h3>
+          <p>Date range and 2-3 lines focused on responsibilities and business value delivered.</p>
+        </article>
+        <article class="summary-card">
+          <h3>Role / Company</h3>
+          <p>Date range and 2-3 lines focused on data processes improved and results obtained.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="certifications" data-section="certifications">
+      <div class="section-head">
+        <h2>Certifications</h2>
         <p>Hover over a card to preview. Click to open.</p>
       </div>
 
       <div class="card-grid">
-        <a class="cert-card" href="certificates/R Certificate.png" target="_blank" rel="noopener">
+        <a class="cert-card" href="certificates/ADF Project Covid.png" rel="noopener">
+          <div class="cert-image">
+            <img src="certificates/ADF Project Covid.png" alt="Certificate - ADF Project Covid" loading="lazy">
+          </div>
+        </a>
+
+        <a class="cert-card" href="certificates/Azure Data Engineer MasterClass DP-203.png" rel="noopener">
+          <div class="cert-image">
+            <img src="certificates/Azure Data Engineer MasterClass DP-203.png" alt="Certificate - Azure Data Engineer MasterClass DP-203" loading="lazy">
+          </div>
+        </a>
+
+        <a class="cert-card" href="certificates/Azure Data Factrory.png" rel="noopener">
+          <div class="cert-image">
+            <img src="certificates/Azure Data Factrory.png" alt="Certificate - Azure Data Factrory" loading="lazy">
+          </div>
+        </a>
+
+        <a class="cert-card" href="certificates/Azure Databricks &amp; Spark.png" rel="noopener">
+          <div class="cert-image">
+            <img src="certificates/Azure Databricks &amp; Spark.png" alt="Certificate - Azure Databricks and Spark" loading="lazy">
+          </div>
+        </a>
+
+        <a class="cert-card" href="certificates/Azure Synapse Analytics.png" rel="noopener">
+          <div class="cert-image">
+            <img src="certificates/Azure Synapse Analytics.png" alt="Certificate - Azure Synapse Analytics" loading="lazy">
+          </div>
+        </a>
+
+        <a class="cert-card" href="certificates/How to Start a Career in Data Science.png" rel="noopener">
+          <div class="cert-image">
+            <img src="certificates/How to Start a Career in Data Science.png" alt="Certificate - How to Start a Career in Data Science" loading="lazy">
+          </div>
+        </a>
+
+        <a class="cert-card" href="certificates/R Certificate.png" rel="noopener">
           <div class="cert-image">
             <img src="certificates/R Certificate.png" alt="Udemy Certificate - R" loading="lazy">
           </div>
         </a>
 
-        <a class="cert-card" href="certificates/SQL Certificate.png" target="_blank" rel="noopener">
+        <a class="cert-card" href="certificates/SQL Certificate.png" rel="noopener">
           <div class="cert-image">
             <img src="certificates/SQL Certificate.png" alt="Udemy Certificate - SQL" loading="lazy">
           </div>
         </a>
 
-        <a class="cert-card" href="certificates/Power BI.png" target="_blank" rel="noopener">
+        <a class="cert-card" href="certificates/Power BI.png" rel="noopener">
           <div class="cert-image">
             <img src="certificates/Power BI.png" alt="Udemy Certificate - Power BI" loading="lazy">
           </div>
         </a>
       </div>
     </section>
+
+    <section class="section" id="about" data-section="about">
+      <div class="section-head">
+        <h2>About</h2>
+      </div>
+      <article class="summary-card">
+        <p>
+          Data-focused professional with engineering background, oriented to solve operational problems through reliable
+          pipelines, clear metrics, and practical analytics.
+        </p>
+      </article>
+    </section>
+
+    <section class="section" id="contact" data-section="contact">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p>Keep this section short with your main channels.</p>
+      </div>
+      <div class="summary-grid three-columns">
+        <article class="summary-card">
+          <h3>Email</h3>
+          <p>your.email@example.com</p>
+        </article>
+        <article class="summary-card">
+          <h3>LinkedIn</h3>
+          <p>linkedin.com/in/your-profile</p>
+        </article>
+        <article class="summary-card">
+          <h3>GitHub</h3>
+          <p>github.com/your-user</p>
+        </article>
+      </div>
+    </section>
   </main>
+
+  <div class="cert-modal" id="cert-modal" aria-hidden="true">
+    <div class="cert-modal-backdrop" data-close="true"></div>
+    <div class="cert-modal-content" role="dialog" aria-modal="true" aria-label="Certificate preview">
+      <button class="cert-modal-close" id="cert-modal-close" type="button" aria-label="Close popup">x</button>
+      <img id="cert-modal-image" src="" alt="Certificate preview">
+    </div>
+  </div>
 
   <script>
     const cards = document.querySelectorAll('.cert-card');
+    const modal = document.getElementById('cert-modal');
+    const modalImage = document.getElementById('cert-modal-image');
+    const modalClose = document.getElementById('cert-modal-close');
+    const topSearch = document.getElementById('top-search');
+    const topSearchInput = document.getElementById('top-search-input');
+
+    const openModal = (src, alt) => {
+      modalImage.src = src;
+      modalImage.alt = alt || 'Certificate preview';
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+    };
+
+    const closeModal = () => {
+      modal.setAttribute('aria-hidden', 'true');
+      modalImage.src = '';
+      document.body.classList.remove('modal-open');
+    };
 
     cards.forEach((card) => {
       const onMove = (event) => {
@@ -70,6 +239,47 @@
       card.addEventListener('mousemove', onMove);
       card.addEventListener('mouseleave', reset);
       card.addEventListener('blur', reset);
+      card.addEventListener('click', (event) => {
+        event.preventDefault();
+        const image = card.querySelector('img');
+        openModal(card.getAttribute('href'), image ? image.alt : 'Certificate preview');
+      });
+    });
+
+    modalClose.addEventListener('click', closeModal);
+    modal.addEventListener('click', (event) => {
+      if (event.target.dataset.close === 'true') {
+        closeModal();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && modal.getAttribute('aria-hidden') === 'false') {
+        closeModal();
+      }
+    });
+
+    const sectionLookup = {
+      name: '#name',
+      projects: '#projects',
+      experience: '#experience',
+      certifications: '#certifications',
+      about: '#about',
+      contact: '#contact'
+    };
+
+    topSearch.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const query = topSearchInput.value.trim().toLowerCase();
+      if (!query) return;
+
+      const key = Object.keys(sectionLookup).find((item) => item.includes(query) || query.includes(item));
+      if (!key) return;
+
+      const target = document.querySelector(sectionLookup[key]);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
   </script>
 
