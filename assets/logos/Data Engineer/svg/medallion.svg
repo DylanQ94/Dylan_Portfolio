@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="medal-bronze" x1="24" x2="48" y1="46" y2="82" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c98642"/>
+      <stop offset="1" stop-color="#8f5528"/>
+    </linearGradient>
+    <linearGradient id="medal-silver" x1="52" x2="76" y1="36" y2="74" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e8edf2"/>
+      <stop offset="1" stop-color="#96a1ab"/>
+    </linearGradient>
+    <linearGradient id="medal-gold" x1="80" x2="104" y1="28" y2="66" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd86a"/>
+      <stop offset="1" stop-color="#d4a419"/>
+    </linearGradient>
+  </defs>
+  <path d="M38 25h12l-5 18H33z" fill="#7a4a25"/>
+  <path d="M58 18h14l-6 20H52z" fill="#77838f"/>
+  <path d="M78 12h14l-6 21H72z" fill="#b88508"/>
+  <circle cx="42" cy="76" r="17" fill="url(#medal-bronze)"/>
+  <circle cx="64" cy="64" r="19" fill="url(#medal-silver)"/>
+  <circle cx="86" cy="52" r="17" fill="url(#medal-gold)"/>
+</svg>

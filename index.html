@@ -1,117 +1,115 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dilan Quintero Espinosa - Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Fraunces:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-  <header class="topbar">
-    <div class="topbar-inner">
-      <nav class="top-links" aria-label="Main navigation">
-        <a href="#name">Name</a>
-        <span class="pipe">|</span>
-        <a href="#experience">Experience</a>
-        <span class="pipe">|</span>
-        <a href="#projects">Projects</a>
-        <span class="pipe">|</span>
-        <a href="#certifications">Certifications</a>
-        <span class="pipe">|</span>
-        <a href="#skills">Skills</a>
-        <span class="pipe">|</span>
-        <a href="#footer">About</a>
-        <span class="pipe">|</span>
-        <a href="#footer">Contact</a>
-      </nav>
-      <form class="top-search" id="top-search">
-        <input id="top-search-input" type="search" placeholder="Buscar seccion (Name, Experience, Projects...)" aria-label="Buscar seccion">
-        <button type="submit">Go</button>
-      </form>
-    </div>
-  </header>
-
   <main class="container">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <nav class="top-links" aria-label="Main navigation">
+          <a href="#name">Profile</a>
+          <span class="pipe">|</span>
+          <a href="#experience">Experience</a>
+          <span class="pipe">|</span>
+          <a href="#projects">Projects</a>
+          <span class="pipe">|</span>
+          <a href="#skills">Skills</a>
+          <span class="pipe">|</span>
+          <a href="#certifications">Certifications</a>
+          <span class="pipe">|</span>
+          <a href="#footer">About</a>
+          <span class="pipe">|</span>
+          <a href="#footer">Contact</a>
+        </nav>
+      </div>
+    </header>
+
     <section class="section hero" id="name" data-section="name">
       <div class="hero-intro">
         <div class="hero-photo-wrap">
           <img
             class="hero-photo"
             src="assets/perfil/Perfil_2.jpg"
-            alt="Foto de perfil"
+            alt="Profile photo"
             loading="eager"
           >
           <p class="hero-photo-note">Data Engineer Portfolio</p>
+          <div class="hero-actions hero-actions-photo">
+            <a class="btn primary" href="assets/resume/Dilan_Quintero_Resume.pdf" download>Download Resume</a>
+            <a class="btn primary" href="mailto:dylanquintero11@gmail.com">Contact</a>
+          </div>
         </div>
         <div class="hero-copy">
+          <span class="hero-kicker">Profile</span>
           <h1>Dilan Quintero Espinosa</h1>
-          <p class="hero-subtitle">Data Engineer | Industrial Analytics | Azure | Databricks | Python</p>
-          <p class="hero-lead">Conecto datos de planta con decisiones de negocio. Diseño pipelines confiables, modelos de datos claros y tableros que muestran impacto real.</p>
-          <div class="hero-actions">
-            <a class="btn primary" href="#projects">Ver proyectos</a>
-            <a class="btn ghost" href="mailto:dylanquintero11@gmail.com">Contactar</a>
-          </div>
-          <div class="hero-badges" aria-label="Stack destacado">
-            <span class="chip">Azure Data Factory</span>
-            <span class="chip">Databricks</span>
-            <span class="chip">Synapse</span>
-            <span class="chip">SQL</span>
-            <span class="chip">Power BI</span>
+          <p class="hero-subtitle">Automation Engineer | Data Engineer</p>
+          <div class="hero-story">
+            <p class="hero-lead">I'm a 25-year-old Colombian Mechatronics Engineer and Electrical Engineer from Universidad Tecnologica de Bolivar. I have always been passionate about programming, automation, technology, and solving challenging problems through continuous self-learning.</p>
+            <p class="hero-lead">My professional journey began with a strong interest in industrial automation and process improvement, which later grew through my experience as a Process Engineer. Working close to real operations showed me how valuable data can be when it is properly collected, transformed, and connected to business decisions.</p>
+            <p class="hero-lead">This experience inspired me to pivot into the world of Data Science and Data Engineering, where I can combine my engineering background, curiosity, and problem-solving mindset with modern data solutions. I am currently strengthening my skills in Azure, Databricks, Python, SQL, and data architecture, while actively seeking opportunities as an Azure Data Engineer to help transform raw industrial and business data into reliable, meaningful, and impactful insights.</p>
           </div>
         </div>
-      </div>
-      <div class="hero-stats" aria-label="Indicadores de impacto">
-        <article class="stat-card">
-          <h3>2.5+ anos</h3>
-          <p>Experiencia en operaciones e ingenieria de procesos.</p>
-        </article>
-        <article class="stat-card">
-          <h3>End-to-end</h3>
-          <p>De fuentes industriales a visualizacion ejecutiva.</p>
-        </article>
-        <article class="stat-card">
-          <h3>Calidad</h3>
-          <p>Versionado, monitoreo y confiabilidad en produccion.</p>
-        </article>
-      </div>
-      <div class="summary-grid">
-        <article class="summary-card">
-          <h3>Professional Focus</h3>
-          <p>Data Engineering and analytics applied to industrial and operational contexts.</p>
-        </article>
-        <article class="summary-card">
-          <h3>Core Stack</h3>
-          <p>Azure Data Factory, Synapse, Databricks, SQL, Python, Power BI.</p>
-        </article>
-        <article class="summary-card">
-          <h3>Current Goal</h3>
-          <p>Build end-to-end data platforms with clear business impact and production quality.</p>
-        </article>
+        <aside class="hero-rail" aria-label="Profile highlights">
+          <article class="hero-rail-card">
+            <span class="hero-rail-label">Goal</span>
+            <p>Azure Data Engineer opportunities where operations, cloud, and analytics intersect.</p>
+          </article>
+          <article class="hero-rail-card">
+            <span class="hero-rail-label">Focus</span>
+            <p>Azure data platforms, industrial analytics, and reliable data architecture.</p>
+          </article>
+          <article class="hero-rail-card">
+            <span class="hero-rail-label">Interests</span>
+            <p>Programming, industrial software development, and self improving.</p>
+          </article>
+          <article class="hero-rail-card">
+            <span class="hero-rail-label">Based In</span>
+            <p>Cartagena, Colombia, GMT-5</p>
+          </article>
+        </aside>
       </div>
     </section>
 
     <section class="section" id="experience" data-section="experience">
       <div class="section-head">
-        <h2>Experience</h2>
-        <p>Professional timeline and growth path.</p>
+          <h2>Experience</h2>
+          <p>Professional timeline and growth path.</p>
       </div>
       <div class="experience-timeline">
         <article class="timeline-item">
           <div class="timeline-dot" aria-hidden="true"></div>
           <div class="timeline-card">
-            <h3>Practicante</h3>
-            <p>0.5 años</p>
+            <h3>Automation Engineer - Self-employed</h3>
+            <p class="timeline-duration">October 13, 2025 - Present</p>
+            <p>As a self-employed Automation Engineer, I decided to work independently while dedicating focused time to my professional transition into Data Engineering. During this period, I have provided automation services for industrial environments, including PLC programming for electrical power transfer control between the plant power supply and the utility grid, PLC and HMI development for plastic roll drilling and cutting machinery, and the development of an automated reporting system using Python to extract data from a SQL Server 2012 database and generate process reports with pandas and Matplotlib.</p>
+            <p>I am currently working on a dosing and mixing plant project, where I am responsible for PLC programming and SCADA design for process control, and I am also designing a SQL Server 2022 database using data logs from FactoryTalk View and FactoryTalk Transaction Manager.</p>
+            <p>These projects have allowed me to continue strengthening my automation background while applying programming, data analysis, database design, and problem-solving skills to real industrial use cases.</p>
           </div>
         </article>
         <article class="timeline-item">
           <div class="timeline-dot" aria-hidden="true"></div>
           <div class="timeline-card">
-            <h3>Ingeniero de Procesos - Ajover</h3>
-            <p>2.5 años</p>
+            <h3>Process Engineer - Ajover</h3>
+            <p class="timeline-duration">March 03, 2023 - October 03, 2025</p>
+            <p>As a Process Engineer at Ajover, I was responsible for supporting and improving the performance of the Stretch production plant, overseeing six production machines and analyzing their operational KPIs through an internal IoT system. My main responsibilities included monitoring production performance, identifying issues affecting availability, performance, and quality, and analyzing process conditions to understand the root causes behind machine inefficiencies or quality deviations.</p>
+            <p>I then used those insights to work on continuous improvement initiatives focused on increasing production efficiency, improving KPIs, and reducing the cost of producing finished goods through automation and process optimization projects. In addition, I continued to support automation-related activities, including PLC programming.</p>
+          </div>
+        </article>
+        <article class="timeline-item">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card">
+            <h3>Automation Intern - Ajover</h3>
+            <p class="timeline-duration">August 27, 2022 - March 27, 2023</p>
+            <p>During my internship at Ajover, I supported industrial automation and process control activities within a manufacturing environment. My work focused on PLC programming, PID control system development, and HMI design, helping improve the monitoring and operation of production processes.</p>
+            <p>I also supported operational tasks by organizing and updating process and production data in Excel, which strengthened my understanding of how industrial data is generated, tracked, and used for decision-making.</p>
           </div>
         </article>
       </div>
@@ -120,60 +118,177 @@
     <section class="section" id="projects" data-section="projects">
       <div class="section-head">
         <h2>Projects</h2>
-        <p>Summarized project highlights in one place. Auto-scroll loop.</p>
+          <p>Three highlighted projects with space for visual previews.</p>
       </div>
-      <div class="projects-carousel" id="projects-carousel" aria-label="Projects carousel">
-        <div class="projects-track">
-          <article class="summary-card project-slide">
-            <h3>Project 1</h3>
-            <div class="chip-row">
-              <span class="chip">ADF</span>
-              <span class="chip">Databricks</span>
-              <span class="chip">Delta</span>
-            </div>
-            <p>Short description: objective, tools used, and measurable outcome.</p>
-            <p class="project-metric">Impacto: -35% tiempo de carga y tableros en tiempo casi real.</p>
-          </article>
-          <article class="summary-card project-slide">
-            <h3>Project 2</h3>
-            <div class="chip-row">
-              <span class="chip">SQL</span>
-              <span class="chip">Synapse</span>
-              <span class="chip">Power BI</span>
-            </div>
-            <p>Short description: data source, transformation logic, and dashboard/report result.</p>
-            <p class="project-metric">Impacto: +15% precision en indicadores de produccion.</p>
-          </article>
-          <article class="summary-card project-slide">
-            <h3>Project 3</h3>
-            <div class="chip-row">
-              <span class="chip">Python</span>
-              <span class="chip">Spark</span>
-              <span class="chip">Quality</span>
-            </div>
-            <p>Short description: architecture, orchestration, and delivery impact.</p>
-            <p class="project-metric">Impacto: validaciones automáticas y alertas diarias.</p>
-          </article>
-          <article class="summary-card project-slide">
-            <h3>Project 4</h3>
-            <div class="chip-row">
-              <span class="chip">ADF</span>
-              <span class="chip">PySpark</span>
-              <span class="chip">Monitoring</span>
-            </div>
-            <p>Short description: orchestration, data quality checks, and production readiness.</p>
-            <p class="project-metric">Impacto: ejecucion nocturna estable con SLA 99.5%.</p>
-          </article>
-          <article class="summary-card project-slide">
-            <h3>Project 5</h3>
-            <div class="chip-row">
-              <span class="chip">KPIs</span>
-              <span class="chip">Power BI</span>
-              <span class="chip">Adoption</span>
-            </div>
-            <p>Short description: KPI model, dashboard layer, and stakeholder adoption.</p>
-            <p class="project-metric">Impacto: adopcion de dashboards por areas clave.</p>
-          </article>
+      <div class="projects-grid" aria-label="Projects grid">
+        <article class="summary-card project-slide">
+          <div class="project-image" role="img" aria-label="Placeholder for Project 1 image">
+            <span>Project image</span>
+          </div>
+          <h3>Project 1</h3>
+          <div class="chip-row">
+            <span class="chip">Azure</span>
+            <span class="chip">ADF</span>
+            <span class="chip">Databricks</span>
+            <span class="chip">Delta</span>
+          </div>
+          <p>Short description: objective, tools used, and measurable outcome.</p>
+          <p class="project-metric">Impact: -35% load time and near real-time dashboards.</p>
+        </article>
+        <a class="summary-card project-slide" href="https://github.com/DylanQ94/az-iot-berkeley" target="_blank" rel="noopener noreferrer" aria-label="Open Az-IOT-Berkeley repository on GitHub">
+          <div class="project-image" role="img" aria-label="Placeholder for Az-IOT-Berkeley project image">
+            <span>Project image</span>
+          </div>
+          <h3>Az-IOT-Berkeley</h3>
+          <div class="chip-row">
+            <span class="chip">Azure</span>
+            <span class="chip">ADF</span>
+            <span class="chip">ADLS</span>
+            <span class="chip">Databricks</span>
+            <span class="chip">Synapse</span>
+          </div>
+          <p>End-to-end Azure data engineering platform for IoT sensor analytics, covering ingestion, lakehouse processing, Gold analytical modeling, and a Synapse Serverless SQL serving layer.</p>
+          <p class="project-metric"></p>
+        </a>
+        <a class="summary-card project-slide" href="https://github.com/DylanQ94/az-supplychain-logistics-optimization" target="_blank" rel="noopener noreferrer" aria-label="Open Az-SupplyChain Logistics Optimization repository on GitHub">
+          <div class="project-image" role="img" aria-label="Placeholder for Az-SupplyChain Logistics Optimization project image">
+            <span>Project image</span>
+          </div>
+          <h3>Az-SupplyChain Logistics Optimization</h3>
+          <div class="chip-row">
+            <span class="chip">Azure</span>
+            <span class="chip">ADF</span>
+            <span class="chip">ADLS</span>
+            <span class="chip">Databricks</span>
+            <span class="chip">Synapse</span>
+          </div>
+          <p>Azure data engineering pipeline for a supply chain logistics dataset, covering ingestion, Delta-based transformations, and a Synapse Serverless SQL serving layer for analytical consumption.</p>
+          <p class="project-metric"></p>
+        </a>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills" data-section="skills">
+      <div class="section-head skills-section-head">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skills-panel" data-tab-scope>
+        <div class="cert-tabs skills-tabs" role="tablist" aria-label="Skill categories">
+          <button class="cert-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="skills-panel-data-engineer" id="skills-tab-data-engineer" data-tab-target="skills-data-engineer" data-tab-group="skills">Data Engineer</button>
+          <button class="cert-tab" type="button" role="tab" aria-selected="false" aria-controls="skills-panel-automation-engineer" id="skills-tab-automation-engineer" data-tab-target="skills-automation-engineer" data-tab-group="skills">Automation Engineer</button>
+          <button class="cert-tab" type="button" role="tab" aria-selected="false" aria-controls="skills-panel-other-tools" id="skills-tab-other-tools" data-tab-target="skills-other-tools" data-tab-group="skills">Otros</button>
+        </div>
+
+        <div class="cert-tab-panel skills-tab-panel is-active" id="skills-panel-data-engineer" role="tabpanel" aria-labelledby="skills-tab-data-engineer" data-tab-panel="skills-data-engineer" data-tab-group="skills">
+          <div class="skills-stage skills-stage-data" aria-label="Data Engineer skills icons">
+            <div class="skills-orbit orbit-one" aria-hidden="true"></div>
+            <div class="skills-orbit orbit-two" aria-hidden="true"></div>
+            <article class="skill-node skill-tilt skill-node-icon pos-azure" aria-label="Azure" data-tooltip="Azure">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Cloud &amp; Data Platforms/svg/azure.svg" alt="Azure logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-adls" aria-label="Azure Data Lake Storage Explorer" data-tooltip="Microsoft Azure Storage Explorer">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Cloud &amp; Data Platforms/svg/adls.svg" alt="Azure Data Lake Storage logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-adf" aria-label="Azure Data Factory" data-tooltip="Azure Data Factory">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Cloud &amp; Data Platforms/svg/data-factories.svg" alt="Azure Data Factory logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-databricks" aria-label="Databricks" data-tooltip="Databricks">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Cloud &amp; Data Platforms/svg/databricks.svg" alt="Databricks logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-synapse" aria-label="Synapse" data-tooltip="Azure Synapse">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Cloud &amp; Data Platforms/svg/synapse.svg" alt="Synapse logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-python" aria-label="Python" data-tooltip="Python">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Data Engineer/svg/python.svg" alt="Python logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-spark" aria-label="Spark" data-tooltip="Apache Spark">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Data Engineer/svg/spark.svg" alt="Spark logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-sql" aria-label="SQL" data-tooltip="SQL Server">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Data Engineer/svg/sql.svg" alt="SQL logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-mysql" aria-label="MySQL" data-tooltip="MySQL">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Data Engineer/svg/mysql.svg" alt="MySQL logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-r" aria-label="R" data-tooltip="R">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Data Engineer/svg/r.svg" alt="R logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-powerbi" aria-label="Power BI" data-tooltip="Power BI">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Data Engineer/svg/powerbi.svg" alt="Power BI logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-github" aria-label="GitHub" data-tooltip="GitHub">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Data Engineer/svg/github.svg" alt="GitHub logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-git" aria-label="Git" data-tooltip="Git">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Data Engineer/svg/git.svg" alt="Git logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-vscode" aria-label="Visual Studio Code" data-tooltip="Visual Studio Code">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Data Engineer/svg/vscode.svg" alt="Visual Studio Code logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-delta" aria-label="Delta Lake" data-tooltip="Delta Lake">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Data Engineer/svg/deltalake.svg" alt="Delta Lake logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-medallion" aria-label="Medallion Architecture" data-tooltip="Medallion Architecture">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Data Engineer/svg/medallion.svg" alt="Medallion Architecture logo" loading="lazy"></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="cert-tab-panel skills-tab-panel" id="skills-panel-automation-engineer" role="tabpanel" aria-labelledby="skills-tab-automation-engineer" data-tab-panel="skills-automation-engineer" data-tab-group="skills" hidden>
+          <div class="skills-stage skills-stage-automation" aria-label="Automation Engineer skills icons">
+            <div class="skills-orbit orbit-one" aria-hidden="true"></div>
+            <div class="skills-orbit orbit-two" aria-hidden="true"></div>
+            <article class="skill-node skill-tilt skill-node-icon pos-connected skill-node-large" aria-label="Connected Industries" data-tooltip="Connected Industries">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Industrial Programmer/svg/Connected.svg" alt="Connected Industries logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-machine skill-node-large" aria-label="Machine Expert" data-tooltip="EcoStruxure Machine Expert">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Industrial Programmer/svg/Machine.svg" alt="Machine Expert logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-tia skill-node-large" aria-label="TIA Portal" data-tooltip="TIA Portal">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Industrial Programmer/svg/Tia21.svg" alt="TIA Portal logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon pos-unity skill-node-large" aria-label="Unity Pro XL" data-tooltip="Unity Pro XL">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Industrial Programmer/svg/Unity.svg" alt="Unity Pro XL logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon skill-node-large skill-node-missing" aria-label="FactoryTalk View Studio" data-tooltip="FactoryTalk View Studio - logo pendiente">
+              <div class="skill-node-logo-wrap"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon skill-node-large skill-node-missing" aria-label="ZelioSoft" data-tooltip="ZelioSoft - logo pendiente">
+              <div class="skill-node-logo-wrap"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon skill-node-large skill-node-missing" aria-label="RSLogix 500" data-tooltip="RSLogix 500 - logo pendiente">
+              <div class="skill-node-logo-wrap"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon skill-node-large skill-node-missing" aria-label="Studio 5000" data-tooltip="Studio 5000 - logo pendiente">
+              <div class="skill-node-logo-wrap"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon skill-node-large skill-node-missing" aria-label="FactoryTalk Transaction Manager" data-tooltip="FactoryTalk Transaction Manager - logo pendiente">
+              <div class="skill-node-logo-wrap"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon skill-node-large skill-node-missing" aria-label="KepserverEnterprise 6" data-tooltip="KepserverEnterprise 6 - logo pendiente">
+              <div class="skill-node-logo-wrap"></div>
+            </article>
+          </div>
+        </div>
+
+        <div class="cert-tab-panel skills-tab-panel" id="skills-panel-other-tools" role="tabpanel" aria-labelledby="skills-tab-other-tools" data-tab-panel="skills-other-tools" data-tab-group="skills" hidden>
+          <div class="skills-stage skills-stage-other" aria-label="Other tools icons">
+            <div class="skills-orbit orbit-one" aria-hidden="true"></div>
+            <div class="skills-orbit orbit-two" aria-hidden="true"></div>
+            <article class="skill-node skill-tilt skill-node-icon" aria-label="Notion" data-tooltip="Notion">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Other/svg/notion.svg" alt="Notion logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon" aria-label="Obsidian" data-tooltip="Obsidian">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Other/svg/obsidian.svg" alt="Obsidian logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon" aria-label="Microsoft Teams" data-tooltip="Microsoft Teams">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Other/svg/teams.svg" alt="Microsoft Teams logo" loading="lazy"></div>
+            </article>
+            <article class="skill-node skill-tilt skill-node-icon" aria-label="Microsoft Outlook" data-tooltip="Microsoft Outlook">
+              <div class="skill-node-logo-wrap"><img class="skill-node-logo-image" src="assets/logos/Other/svg/outlook.svg" alt="Microsoft Outlook logo" loading="lazy"></div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -184,136 +299,79 @@
         <p>Hover over a card to preview. Click to open.</p>
       </div>
 
-      <div class="card-grid">
-        <a class="cert-card" href="assets/certificates/ADF Project Covid.png" rel="noopener">
-          <div class="cert-image">
-            <img src="assets/certificates/ADF Project Covid.png" alt="Certificate - ADF Project Covid" loading="lazy">
+      <div class="certifications-panel" data-tab-scope>
+        <div class="cert-tabs" role="tablist" aria-label="Certification categories">
+          <button class="cert-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="cert-panel-data-engineer" id="cert-tab-data-engineer" data-tab-target="data-engineer" data-tab-group="certifications">Data Engineer</button>
+          <button class="cert-tab" type="button" role="tab" aria-selected="false" aria-controls="cert-panel-automation-engineer" id="cert-tab-automation-engineer" data-tab-target="automation-engineer" data-tab-group="certifications">Automation Engineer</button>
+        </div>
+
+        <div class="cert-tab-panel is-active" id="cert-panel-data-engineer" role="tabpanel" aria-labelledby="cert-tab-data-engineer" data-tab-panel="data-engineer" data-tab-group="certifications">
+          <div class="card-grid">
+            <a class="cert-card" href="assets/certificates/Data_Engineer/ADF Project Covid.png" rel="noopener">
+              <div class="cert-image">
+                <img src="assets/certificates/Data_Engineer/ADF Project Covid.png" alt="Certificate - ADF Project Covid" loading="lazy">
+              </div>
+            </a>
+
+            <a class="cert-card" href="assets/certificates/Data_Engineer/Azure Data Engineer MasterClass DP-203.png" rel="noopener">
+              <div class="cert-image">
+                <img src="assets/certificates/Data_Engineer/Azure Data Engineer MasterClass DP-203.png" alt="Certificate - Azure Data Engineer MasterClass DP-203" loading="lazy">
+              </div>
+            </a>
+
+            <a class="cert-card" href="assets/certificates/Data_Engineer/Azure Data Factrory.png" rel="noopener">
+              <div class="cert-image">
+                <img src="assets/certificates/Data_Engineer/Azure Data Factrory.png" alt="Certificate - Azure Data Factrory" loading="lazy">
+              </div>
+            </a>
+
+            <a class="cert-card" href="assets/certificates/Data_Engineer/Azure Databricks &amp; Spark.png" rel="noopener">
+              <div class="cert-image">
+                <img src="assets/certificates/Data_Engineer/Azure Databricks &amp; Spark.png" alt="Certificate - Azure Databricks and Spark" loading="lazy">
+              </div>
+            </a>
+
+            <a class="cert-card" href="assets/certificates/Data_Engineer/Azure Synapse Analytics.png" rel="noopener">
+              <div class="cert-image">
+                <img src="assets/certificates/Data_Engineer/Azure Synapse Analytics.png" alt="Certificate - Azure Synapse Analytics" loading="lazy">
+              </div>
+            </a>
+
+            <a class="cert-card" href="assets/certificates/Data_Engineer/How to Start a Career in Data Science.png" rel="noopener">
+              <div class="cert-image">
+                <img src="assets/certificates/Data_Engineer/How to Start a Career in Data Science.png" alt="Certificate - How to Start a Career in Data Science" loading="lazy">
+              </div>
+            </a>
+
+            <a class="cert-card" href="assets/certificates/Data_Engineer/R Certificate.png" rel="noopener">
+              <div class="cert-image">
+                <img src="assets/certificates/Data_Engineer/R Certificate.png" alt="Udemy Certificate - R" loading="lazy">
+              </div>
+            </a>
+
+            <a class="cert-card" href="assets/certificates/Data_Engineer/SQL Certificate.png" rel="noopener">
+              <div class="cert-image">
+                <img src="assets/certificates/Data_Engineer/SQL Certificate.png" alt="Udemy Certificate - SQL" loading="lazy">
+              </div>
+            </a>
+
+            <a class="cert-card" href="assets/certificates/Data_Engineer/Power BI.png" rel="noopener">
+              <div class="cert-image">
+                <img src="assets/certificates/Data_Engineer/Power BI.png" alt="Udemy Certificate - Power BI" loading="lazy">
+              </div>
+            </a>
           </div>
-        </a>
+        </div>
 
-        <a class="cert-card" href="assets/certificates/Azure Data Engineer MasterClass DP-203.png" rel="noopener">
-          <div class="cert-image">
-            <img src="assets/certificates/Azure Data Engineer MasterClass DP-203.png" alt="Certificate - Azure Data Engineer MasterClass DP-203" loading="lazy">
+        <div class="cert-tab-panel" id="cert-panel-automation-engineer" role="tabpanel" aria-labelledby="cert-tab-automation-engineer" data-tab-panel="automation-engineer" data-tab-group="certifications" hidden>
+          <div class="card-grid cert-grid-single">
+            <a class="cert-card cert-card-pdf" href="assets/certificates/Automation_Engineer/Dilan Quintero S7-1500 N1.pdf" rel="noopener" data-cert-type="pdf" data-cert-title="Certificate - SIMATIC TIA Portal para S7-1500 Nivel 1">
+              <div class="cert-image cert-pdf-image">
+                <iframe src="assets/certificates/Automation_Engineer/Dilan Quintero S7-1500 N1.pdf#view=FitH" title="Certificate - SIMATIC TIA Portal para S7-1500 Nivel 1" loading="lazy"></iframe>
+              </div>
+            </a>
           </div>
-        </a>
-
-        <a class="cert-card" href="assets/certificates/Azure Data Factrory.png" rel="noopener">
-          <div class="cert-image">
-            <img src="assets/certificates/Azure Data Factrory.png" alt="Certificate - Azure Data Factrory" loading="lazy">
-          </div>
-        </a>
-
-        <a class="cert-card" href="assets/certificates/Azure Databricks &amp; Spark.png" rel="noopener">
-          <div class="cert-image">
-            <img src="assets/certificates/Azure Databricks &amp; Spark.png" alt="Certificate - Azure Databricks and Spark" loading="lazy">
-          </div>
-        </a>
-
-        <a class="cert-card" href="assets/certificates/Azure Synapse Analytics.png" rel="noopener">
-          <div class="cert-image">
-            <img src="assets/certificates/Azure Synapse Analytics.png" alt="Certificate - Azure Synapse Analytics" loading="lazy">
-          </div>
-        </a>
-
-        <a class="cert-card" href="assets/certificates/How to Start a Career in Data Science.png" rel="noopener">
-          <div class="cert-image">
-            <img src="assets/certificates/How to Start a Career in Data Science.png" alt="Certificate - How to Start a Career in Data Science" loading="lazy">
-          </div>
-        </a>
-
-        <a class="cert-card" href="assets/certificates/R Certificate.png" rel="noopener">
-          <div class="cert-image">
-            <img src="assets/certificates/R Certificate.png" alt="Udemy Certificate - R" loading="lazy">
-          </div>
-        </a>
-
-        <a class="cert-card" href="assets/certificates/SQL Certificate.png" rel="noopener">
-          <div class="cert-image">
-            <img src="assets/certificates/SQL Certificate.png" alt="Udemy Certificate - SQL" loading="lazy">
-          </div>
-        </a>
-
-        <a class="cert-card" href="assets/certificates/Power BI.png" rel="noopener">
-          <div class="cert-image">
-            <img src="assets/certificates/Power BI.png" alt="Udemy Certificate - Power BI" loading="lazy">
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section class="section" id="skills" data-section="skills">
-      <div class="section-head">
-        <h2>Skills</h2>
-        <p>Technology stacks grouped by category.</p>
-      </div>
-
-      <div class="skills-grid">
-        <article class="skill-category-card">
-          <h3>Cloud &amp; Data Platforms</h3>
-          <div class="skill-app-grid">
-            <div class="skill-app" aria-label="Azure">
-              <img class="skill-logo-image" src="assets/logos/Cloud &amp; Data Platforms/svg/azure.svg" alt="Azure logo" loading="lazy">
-            </div>
-
-            <div class="skill-app" aria-label="Azure Data Factory">
-              <img class="skill-logo-image" src="assets/logos/Cloud &amp; Data Platforms/svg/data-factories.svg" alt="Azure Data Factory logo" loading="lazy">
-            </div>
-
-            <div class="skill-app" aria-label="Databricks">
-              <img class="skill-logo-image" src="assets/logos/Cloud &amp; Data Platforms/svg/databricks.svg" alt="Databricks logo" loading="lazy">
-            </div>
-
-            <div class="skill-app" aria-label="Synapse">
-              <img class="skill-logo-image" src="assets/logos/Cloud &amp; Data Platforms/svg/synapse.svg" alt="Synapse logo" loading="lazy">
-            </div>
-          </div>
-        </article>
-
-        <article class="skill-category-card">
-          <h3>Data Engineer</h3>
-          <div class="skill-app-grid">
-            <div class="skill-app" aria-label="Delta Lake">
-              <img class="skill-logo-image" src="assets/logos/Data Engineer/svg/deltalake.svg" alt="Delta Lake logo" loading="lazy">
-            </div>
-
-            <div class="skill-app" aria-label="Medallion Architecture">
-              <img class="skill-logo-image" src="assets/logos/Data Engineer/svg/medals_clean.svg" alt="Medallion logo" loading="lazy">
-            </div>
-
-            <div class="skill-app" aria-label="Python">
-              <img class="skill-logo-image" src="assets/logos/Data Engineer/svg/python.svg" alt="Python logo" loading="lazy">
-            </div>
-
-            <div class="skill-app" aria-label="Spark">
-              <img class="skill-logo-image" src="assets/logos/Data Engineer/svg/spark.svg" alt="Spark logo" loading="lazy">
-            </div>
-
-            <div class="skill-app" aria-label="SQL">
-              <img class="skill-logo-image" src="assets/logos/Data Engineer/svg/sql.svg" alt="SQL logo" loading="lazy">
-            </div>
-          </div>
-        </article>
-
-        <article class="skill-category-card">
-          <h3>Industrial Programmer</h3>
-          <div class="skill-app-grid">
-            <div class="skill-app" aria-label="Connected Industries">
-              <img class="skill-logo-image" src="assets/logos/Industrial Programmer/svg/Connected.svg" alt="Connected Industries logo" loading="lazy">
-            </div>
-
-            <div class="skill-app" aria-label="Machine Expert">
-              <img class="skill-logo-image" src="assets/logos/Industrial Programmer/svg/Machine.svg" alt="Machine Expert logo" loading="lazy">
-            </div>
-
-            <div class="skill-app" aria-label="TIA V19">
-              <img class="skill-logo-image" src="assets/logos/Industrial Programmer/svg/Tia21.svg" alt="TIA logo" loading="lazy">
-            </div>
-
-            <div class="skill-app" aria-label="Unity Pro XL">
-              <img class="skill-logo-image" src="assets/logos/Industrial Programmer/svg/Unity.svg" alt="Unity Pro XL logo" loading="lazy">
-            </div>
-          </div>
-        </article>
+        </div>
       </div>
     </section>
 
@@ -328,8 +386,8 @@
       </p>
     </div>
     <div class="footer-block">
-      <h3>Disponibilidad</h3>
-      <p>Abierto a oportunidades como Data Engineer. Colombia (GMT-5) y remoto.</p>
+      <h3>Availability</h3>
+      <p>Open to opportunities as a Data Engineer. Colombia (GMT-5) and remote.</p>
     </div>
     <div class="footer-block">
       <h3>Find Me Here</h3>
@@ -367,22 +425,35 @@
     <div class="cert-modal-backdrop" data-close="true"></div>
     <div class="cert-modal-content" role="dialog" aria-modal="true" aria-label="Certificate preview">
       <button class="cert-modal-close" id="cert-modal-close" type="button" aria-label="Close popup">x</button>
-      <img id="cert-modal-image" src="" alt="Certificate preview">
+      <img id="cert-modal-image" src="" alt="Certificate preview" hidden>
+      <iframe id="cert-modal-frame" src="" title="Certificate PDF preview" hidden></iframe>
     </div>
   </div>
 
   <script>
     const cards = document.querySelectorAll('.cert-card');
-    const skillApps = document.querySelectorAll('.skill-app');
+    const skillCards = document.querySelectorAll('.skill-tilt');
     const modal = document.getElementById('cert-modal');
     const modalImage = document.getElementById('cert-modal-image');
+    const modalFrame = document.getElementById('cert-modal-frame');
     const modalClose = document.getElementById('cert-modal-close');
-    const topSearch = document.getElementById('top-search');
-    const topSearchInput = document.getElementById('top-search-input');
 
-    const openModal = (src, alt) => {
-      modalImage.src = src;
-      modalImage.alt = alt || 'Certificate preview';
+    const openModal = (src, alt, type = 'image') => {
+      const isPdf = type === 'pdf' || src.toLowerCase().endsWith('.pdf');
+
+      if (isPdf) {
+        modalFrame.src = `${src}#view=FitH`;
+        modalFrame.hidden = false;
+        modalImage.hidden = true;
+        modalImage.src = '';
+      } else {
+        modalImage.src = src;
+        modalImage.alt = alt || 'Certificate preview';
+        modalImage.hidden = false;
+        modalFrame.hidden = true;
+        modalFrame.src = '';
+      }
+
       modal.setAttribute('aria-hidden', 'false');
       document.body.classList.add('modal-open');
     };
@@ -390,6 +461,9 @@
     const closeModal = () => {
       modal.setAttribute('aria-hidden', 'true');
       modalImage.src = '';
+      modalFrame.src = '';
+      modalImage.hidden = true;
+      modalFrame.hidden = true;
       document.body.classList.remove('modal-open');
     };
 
@@ -421,11 +495,44 @@
       card.addEventListener('click', (event) => {
         event.preventDefault();
         const image = card.querySelector('img');
-        openModal(card.getAttribute('href'), image ? image.alt : 'Certificate preview');
+        openModal(
+          card.getAttribute('href'),
+          image ? image.alt : card.dataset.certTitle || 'Certificate preview',
+          card.dataset.certType || 'image'
+        );
       });
     });
 
-    skillApps.forEach((card) => {
+    document.querySelectorAll('[data-tab-scope]').forEach((scope) => {
+      const tabs = scope.querySelectorAll('[data-tab-target]');
+      const panels = scope.querySelectorAll('[data-tab-panel]');
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          const target = tab.dataset.tabTarget;
+          const group = tab.dataset.tabGroup;
+
+          tabs.forEach((item) => {
+            const isSameGroup = item.dataset.tabGroup === group;
+            const isActive = item === tab;
+
+            if (isSameGroup) {
+              item.classList.toggle('is-active', isActive);
+              item.setAttribute('aria-selected', String(isActive));
+            }
+          });
+
+          panels.forEach((panel) => {
+            if (panel.dataset.tabGroup !== group) return;
+            const isActive = panel.dataset.tabPanel === target;
+            panel.classList.toggle('is-active', isActive);
+            panel.hidden = !isActive;
+          });
+        });
+      });
+    });
+
+    skillCards.forEach((card) => {
       const onMove = (event) => {
         const rect = card.getBoundingClientRect();
         const x = event.clientX - rect.left;
@@ -465,70 +572,55 @@
       }
     });
 
-    const projectsTrack = document.querySelector('.projects-track');
-    const projectsCarousel = document.getElementById('projects-carousel');
-    if (projectsTrack && projectsCarousel) {
-      const initialSlides = [...projectsTrack.children];
-      initialSlides.forEach((slide) => {
-        const clone = slide.cloneNode(true);
-        clone.setAttribute('aria-hidden', 'true');
-        projectsTrack.appendChild(clone);
-      });
+    /*
+      Future carousel reintegration:
+      This section previously used `.projects-carousel` + `.projects-track` with
+      duplicated slides and requestAnimationFrame auto-scroll. It was replaced by
+      fixed cards because the portfolio currently highlights only three projects.
+      When more projects are available, restore the carousel markup and reactivate
+      the logic below.
 
-      let isPaused = false;
-      let lastTimestamp = performance.now();
-      const pause = () => { isPaused = true; };
-      const resume = () => { isPaused = false; };
+      const projectsTrack = document.querySelector('.projects-track');
+      const projectsCarousel = document.getElementById('projects-carousel');
+      if (projectsTrack && projectsCarousel) {
+        const initialSlides = [...projectsTrack.children];
+        initialSlides.forEach((slide) => {
+          const clone = slide.cloneNode(true);
+          clone.setAttribute('aria-hidden', 'true');
+          projectsTrack.appendChild(clone);
+        });
 
-      projectsCarousel.addEventListener('mouseenter', pause);
-      projectsCarousel.addEventListener('mouseleave', resume);
-      projectsCarousel.addEventListener('touchstart', pause, { passive: true });
-      projectsCarousel.addEventListener('touchend', resume);
-      projectsCarousel.addEventListener('focusin', pause);
-      projectsCarousel.addEventListener('focusout', resume);
+        let isPaused = false;
+        let lastTimestamp = performance.now();
+        const pause = () => { isPaused = true; };
+        const resume = () => { isPaused = false; };
 
-      const autoScroll = (timestamp) => {
-        const loopWidth = projectsTrack.scrollWidth / 2;
-        if (!isPaused && loopWidth > 0) {
-          const delta = timestamp - lastTimestamp;
-          const pxPerMs = loopWidth / 40000;
-          projectsCarousel.scrollLeft += pxPerMs * delta;
+        projectsCarousel.addEventListener('mouseenter', pause);
+        projectsCarousel.addEventListener('mouseleave', resume);
+        projectsCarousel.addEventListener('touchstart', pause, { passive: true });
+        projectsCarousel.addEventListener('touchend', resume);
+        projectsCarousel.addEventListener('focusin', pause);
+        projectsCarousel.addEventListener('focusout', resume);
 
-          if (projectsCarousel.scrollLeft >= loopWidth) {
-            projectsCarousel.scrollLeft -= loopWidth;
+        const autoScroll = (timestamp) => {
+          const loopWidth = projectsTrack.scrollWidth / 2;
+          if (!isPaused && loopWidth > 0) {
+            const delta = timestamp - lastTimestamp;
+            const pxPerMs = loopWidth / 40000;
+            projectsCarousel.scrollLeft += pxPerMs * delta;
+
+            if (projectsCarousel.scrollLeft >= loopWidth) {
+              projectsCarousel.scrollLeft -= loopWidth;
+            }
           }
-        }
-        lastTimestamp = timestamp;
+          lastTimestamp = timestamp;
+          requestAnimationFrame(autoScroll);
+        };
+
         requestAnimationFrame(autoScroll);
-      };
-
-      requestAnimationFrame(autoScroll);
-    }
-
-    const sectionLookup = {
-      name: '#name',
-      experience: '#experience',
-      projects: '#projects',
-      certifications: '#certifications',
-      skills: '#skills',
-      about: '#footer',
-      contact: '#footer',
-      footer: '#footer'
-    };
-
-    topSearch.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const query = topSearchInput.value.trim().toLowerCase();
-      if (!query) return;
-
-      const key = Object.keys(sectionLookup).find((item) => item.includes(query) || query.includes(item));
-      if (!key) return;
-
-      const target = document.querySelector(sectionLookup[key]);
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
-    });
+    */
+
   </script>
 
 </body>
